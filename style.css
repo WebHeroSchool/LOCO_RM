@@ -1,0 +1,33 @@
+.header__logo {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+}
+.header__lang {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+}
+.first__title {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.first__description {
+  font-family: Montserrat;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.button {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.link {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+}
