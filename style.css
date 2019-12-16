@@ -212,6 +212,7 @@ h1, h2, h3, h4, h5, h6 {
 .first {
   background: URL("./images/pete-bellis-432867-unsplash.png");
   background-size: contain;
+  background-repeat: no-repeat;
   margin-top: 69px;
 }
 
