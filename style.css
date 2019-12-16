@@ -1,33 +1,242 @@
+.body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.first, .second, .third {
+  box-sizing: border-box;
+  width: 100%;
+  /*max-width: 1440px;*/
+  min-width: 360px;
+  height: 100vh;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/* header */
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /*max-width: 1440px;*/
+  margin: auto;
+  height: 92px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 461px;
+}
+
 .header__logo {
   font-family: Montserrat;
   font-weight: 500;
   font-style: normal;
+  font-size: 30px;
+  color: #FFFFFF;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+
+  padding-left: 52px;
+  padding-top: 36px;
 }
+
 .header__lang {
   font-family: Montserrat;
   font-weight: 500;
   font-style: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 42px;
+}
+
+.lang__pointer {
+  float: right;
+  margin: 10px;
+}
+
+.header__burger {
+  background: #F2F2F2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 92px;
+  height: 92px;
+  align-content: flex-end;
+}
+
+.header__burger-line {
+  background: #000;
+  width: 34.7px;
+  height: 3.48px;
+  margin-bottom: 6px;
+}
+
+/* first */
+
+.first {
+  background-color: #FFFFFF;
+  background-size: cover;
+}
+.first__rectangle5 {
+  background: #000000;
+  width: 32%;
+  max-width: 461px;
+  height: 100vh;
+  background-size: cover;
+  position: absolute;
+}
+
+.first__wrap {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 1120px;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 20px;
+}
+.first__picture {
+  position: relative;
+  padding-right: 20px;
+}
+
+.first__text {
+  display: flex;
+  flex-flow: column;
+  padding-left: 20px;
+
 }
 .first__title {
   font-family: Montserrat;
   font-weight: bold;
   font-style: normal;
+  font-size: 80px;
+  line-height: 82px;
+  vertical-align: top;
 }
 
 .first__description {
   font-family: Montserrat;
   font-weight: normal;
   font-style: normal;
+  display: flex;
+  vertical-align: center;
+  padding-top: 26px;
+  padding-bottom: 36px;
 }
 
+.first__buttons {
+  display: flex;
+  vertical-align: bottom;
+  justify-content: space-between;
+
+}
 .button {
   font-family: Montserrat;
   font-weight: 500;
   font-style: normal;
+  font-size: 13px;
+  border: 1.5px solid #000000;
+  padding: 14px 41px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .link {
   font-family: Montserrat;
   font-weight: 500;
   font-style: normal;
+  font-size: 13px;
+  border: 0;
+  padding: 14px 41px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.vector21 {
+
+}
+
+.first__contacts {
+  position: relative;
+  padding-left: 52px;
+  padding-top: 10px;
+}
+
+.contacts__link {
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 5px;
+}
+
+.first__scroll {
+  margin: 0 500px;
+}
+
+@media (max-width: 768px) {
+.header__lang, .lang__pointer, .first__rectangle5, .first__description,
+.first__buttons, .first__contacts, .first__picture {
+  display: none;
+}
+
+  .header {
+    height: 69px
+  }
+  .header__inner {
+    width: 317px;
+    color: #FFFFFF
+    display: flex;
+    text-align: center;
+}
+  .header__logo {
+    color: #000000;
+
+    padding-left: 26px;
+    padding-top: 14px;
+  }
+
+.first {
+  background: URL("./images/pete-bellis-432867-unsplash.png");
+  background-size: contain;
+  margin-top: 69px;
+}
+
+
+.first__title {
+  width: 297px;
+  height: 103px;
+  font-size: 50px;
+  line-height: 51px;
+  margin-top: 300px;
+  margin-left: 29px;
+}
+
+.first__title:after {
+  content: "";
+  display:flex;
+  margin-top: 29px;
+  margin-left: 110px;
+  justify-content: center;
+	/*display: block;
+	position: absolute;*/
+	height: 12px;
+	width: 28px;
+	background-image: URL("./images/Vector_black.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
 }
