@@ -228,11 +228,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .second__picture-pink {
   z-index: 2;
+  padding-left: 131px;
 }
 
 .second__picture-grey {
   position: absolute;
   z-index: 1;
+}
+
+.second__content {
+  display: flex;
+  flex-flow: column;
 }
 
 .second__text {
@@ -342,6 +348,28 @@ line-height: 0px;
 color: #000000;
 }
 
+.link {
+  padding-left: 0;
+  padding-top: 39px;
+}
+
+.second__link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #000000;
+}
+
+.vector22 {
+  padding-left: 10px;
+}
+
 /* Third Section */
 
 .third {
@@ -356,9 +384,18 @@ color: #000000;
 .third__wrap {
   height: 100%;
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+  justify-content: center;
   align-items: center;
+}
+
+.third__picture {
+}
+
+.third__content {
+  display: flex;
+  flex-flow: column;
+  /*position: absolute;
+  padding-left: 1150px;*/
 }
 
 .third__text {
@@ -419,6 +456,12 @@ color: #000000;
     justify-content: flex-end;
     padding: 21px;
     align-items: center;
+
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1440px;
+    min-width: 360px;
+    margin: auto;
 }
 
   .cite__created-text {
@@ -435,9 +478,9 @@ color: #000000;
 
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
 .header__lang, .lang__pointer, .first__rectangle5, .first__description,
-.first__buttons, .first__contacts, .first__picture {
+.first__buttons, .first__contacts, .first__picture, .second__picture-grey {
   display: none;
 }
 
@@ -468,20 +511,21 @@ color: #000000;
   }
 
 .first {
-  background: URL("./images/pete-bellis-432867-unsplash.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
+  display: inline-block;
+  /*display: flex;
+  justify-content: flex-end;*/
 }
 
 .first__wrap {
+  background-image: URL("./images/pete-bellis-432867-unsplash.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
   display: flex;
   align-items: flex-end;
   width: 100%;
-  margin: 0;
   height: 100vh;
 }
 .first__title {
