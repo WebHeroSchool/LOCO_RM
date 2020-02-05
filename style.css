@@ -70,11 +70,11 @@ h1, h2, h3, h4, h5, h6 {
 .button__burger {
   cursor: pointer;
   border: none;
-  background-color: transparent;
+  background-color: #EDEDED;
 }
 
 .header__burger {
-  background: white;
+  background: #EDEDED;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
 }
 
-.link {
+.first__link {
   font-family: Montserrat;
   font-weight: 500;
   font-style: normal;
@@ -176,10 +176,13 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .vector21 {
-
+  padding-left: 19px;
 }
 
 .first__contacts {
@@ -487,7 +490,7 @@ color: #000000;
 
 @media screen and (max-width: 1200px) {
 
-  .first__title {
+    .first__title {
     font-size: 50px;
   }
 
@@ -500,7 +503,7 @@ color: #000000;
     height: 463px;
   }
 
-  .button, .link {
+  .button, .first__link {
     font-size: 10px;
   }
 }
@@ -558,30 +561,33 @@ color: #000000;
   margin: 0;
   align-items: flex-end;
 }
-.first__title {
-  font-size: 50px;
-  line-height: 51px;
-  /* display: flex;
-  flex-flow: row wrap;*/
-}
 
 .first__text {
  display: flex;
  flex-flow: column;
- padding-left: 20px;
  width: 100%;
- padding-bottom: 10%;
+ padding-bottom: 20px;
+ justify-content: center;
+ align-items: center;
+ margin: 0;
+ padding: 0;
+}
+
+.first__title {
+  font-size: 50px;
+  line-height: 51px;
+  position: relative;
+  padding-bottom: 50px;
+  padding-left: 20px;
 }
 
 .first__title:after {
   content: "";
-  display:flex;
+  position: absolute;
+  display: block;
   margin-top: 29px;
-  margin-left: 135px;
-  justify-content: center;
-	/*display: block;
-	position: absolute;*/
-	height: 20px;
+  margin-left: 50%;
+  height: 20px;
 	width: 28px;
 	background-image: URL("./images/Vector_black.png");
   background-size: contain;
