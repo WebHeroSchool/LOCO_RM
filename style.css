@@ -427,25 +427,26 @@ padding-top: 17px;
 /* Third Section */
 
 .third {
-  background: #EBE3D8;
-  height: 100vh;
-  background-image: url("./images/Rectangle 10.png");
-  background-repeat: no-repeat;
-  background-position: 388px;
+  background: linear-gradient(to right, #EBE3D8 25%, #000000 25%, #000000 35%, #EBE3D8 35%);
   display: flex;
   flex-flow: column;
   position: relative;
 }
 
 .third__picture {
-  padding-top: 139px;
-  padding-left: 85px;
+  max-width: 850px;
+  height: auto;
+  padding-top: 130px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-right: 20px;
 }
 
 .third__image {
   max-width: 100%;
   height: auto;
 }
+
 .third__wrap {
   display: flex;
   flex-flow: column;
@@ -539,7 +540,7 @@ padding-top: 17px;
   /* Footer */
 
   .created {
-    background-image: linear-gradient(to right, #EBE3D8 388px, #000 388px, #000 461px, #EBE3D8 461px);
+    background-image: linear-gradient(to right, #EBE3D8 25%, #000000 25%, #000000 35%, #EBE3D8 35%);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -581,6 +582,11 @@ padding-top: 17px;
 
   .button, .first__link {
     font-size: 10px;
+  }
+
+  .second__content {
+    width: 388px;
+    padding-right: 10px;
   }
 
   .second__picture-grey {
@@ -631,16 +637,18 @@ padding-top: 17px;
 
   .second__link {
     font-size: 15px;
+    display: flex;
+    align-items: center;
   }
-.vector22 {
 
+.vector22 {
+  width: 50%;
+  height: 10%;
   padding-left: 0px;
 }
-
-.third__wrap {
-  justify-content: flex-end;
+.third__content {
+  padding-right: 10px;
 }
-
 }
 
 @media screen and (max-width: 960px) {
@@ -797,20 +805,23 @@ line-height: 28px;
 }
 
 .third {
-  background-position: 25%;
-  height: 80vh;
+  height: 100vh;
 }
 
 .third__picture {
   padding-left: 10px;
   padding-top: 32px;
+  max-width: 387px;
+  margin: 0 auto;
 }
+
 
 .third__wrap {
   justify-content: center;
+  align-items: center;
 }
 
-.third__content {
+ .third__content {
   width: 305px;
   height: 195px;
 }
@@ -843,17 +854,19 @@ height: auto;
 }
 
 .third__link {
-  font-size: 15px;
-  line-height: 18px;
-  width: 200px;
+  width: 300px;
   flex-flow: column;
   align-items: flex-start;
 }
 
-.vector23 {
-  padding-left: 0px;
+.third__links {
+  font-size: 15px;
+  line-height: 18px;
+  padding-left: 100px;
+  width: 50%;
 }
 
-
-
+.vector23 {
+  padding-left: 100px;
+}
 }
